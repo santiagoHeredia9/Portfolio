@@ -1,0 +1,26 @@
+.education h2 {
+    font-size: 1.8rem;
+    color: rgb(45, 45, 45);
+    margin: 0;
+}
+
+.education p {
+    font-size: 1.5rem;
+    color: rgb(45, 45, 45);
+    font-weight: 400;
+    text-wrap: pretty;
+}
+
+@media (max-width: 767px) {
+    .education{
+      margin: 0 auto;
+    }
+    
+    .education h2{
+      text-align: center;
+    }
+  
+    .education p{
+      max-width: 500px;
+    }
+  }

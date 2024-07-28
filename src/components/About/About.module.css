@@ -1,0 +1,26 @@
+.about h2{
+ font-size: 1.8rem;
+ color: rgb(45, 45, 45);
+ margin: 0;
+}
+
+.about p{
+  font-size: 1.5rem;
+  color: rgb(45, 45, 45);
+  font-weight: 400;
+  text-wrap: pretty;
+}
+
+@media (max-width: 767px) {
+  .about{
+    margin: 0 auto;
+  }
+  
+  .about h2{
+    text-align: center;
+  }
+
+  .about p{
+    max-width: 500px;
+  }
+}
