@@ -47,7 +47,7 @@ const Hero = () => {
           </footer>
         </div>
         <figure>
-          <img src="/retrato.jpg" alt="profile" />
+          <img className={styles.image} src="/imagenSinFondo.png" alt="profile" />
         </figure>
       </div>
     </>
