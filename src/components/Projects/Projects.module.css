@@ -1,3 +1,4 @@
+/* Projects.module.css */
 .container h2 {
   font-size: 1.8rem;
   color: rgb(45, 45, 45);
@@ -15,8 +16,12 @@
   gap: 30px;
   color: rgb(52, 52, 52);
   font-weight: 500;
-
   font-size: 1.1rem;
+}
+
+.projectLink {
+  text-decoration: none;
+  color: inherit;
 }
 
 .project {
@@ -29,10 +34,11 @@
   height: 220px;
   transition: all 0.3s ease;
   box-shadow: 0 0 5px rgba(52, 52, 52, 0.385);
-  &:hover {
-    transform: scale(1.03);
-    border-color: orangered;
-  }
+}
+
+.project:hover {
+  transform: scale(1.03);
+  border-color: orangered;
 }
 
 .projects a {
@@ -65,21 +71,24 @@
 }
 
 .link {
-  background-color: rgb(45, 45, 45);
   padding: 5px;
   border-radius: 5px;
+  border-bottom: 3px solid rgb(88, 88, 88);
   transition: all 0.3s ease;
-  &:hover {
-    background-color: gray;
-    box-shadow: 0 0 5px rgba(52, 52, 52, 0.385);
-    transform: scale(1.05);
-  }
+  opacity: 0;
+  transform: scale(0.95);
+  box-shadow: 0 0 5px rgba(145, 145, 145, 0.385);
 }
 
-.link a {
-  color: white;
-  font-size: 1rem;
+.project:hover .link {
+  opacity: 1;
+  transform: scale(1.05);
 }
+
+.go {
+  color: rgb(49, 49, 49);
+}
+
 
 .tags p {
   text-decoration: underline;
